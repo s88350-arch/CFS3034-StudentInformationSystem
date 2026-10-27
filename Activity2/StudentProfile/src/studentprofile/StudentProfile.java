@@ -5,7 +5,9 @@
 package studentprofile;
 
 /**
- *
+ *Author: Siti Nur Syazwani Ahmad
+ * Program Name; StudentProfile.java
+ * Description: 
  * @author HP
  */
 public class StudentProfile {
@@ -15,8 +17,8 @@ public class StudentProfile {
      */
     public static void main(String[] args) {
         System.out.println("Name: Your Name");
-        System.out.println("Student ID: Your Student ID");
-        System.out.println("Program: Bachelor of Computer Science");
+        System.out.println("Student ID");
+        System.out.println("Programme: Bachelor of Computer Science");
     }
     
 }
