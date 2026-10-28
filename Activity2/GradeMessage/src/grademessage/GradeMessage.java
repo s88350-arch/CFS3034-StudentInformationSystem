@@ -13,8 +13,11 @@ public class GradeMessage {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public void printMessage() {
         System.out.println("Grade: Excellent");
     }
-    
+    public static void main(String[] args) {
+        GradeMessage message = new GradeMessage();
+        message.printMessage();
+    }
 }
