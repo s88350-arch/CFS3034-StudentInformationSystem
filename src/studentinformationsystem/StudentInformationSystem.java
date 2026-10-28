@@ -12,43 +12,49 @@ package studentinformationsystem;
  * Modified Date: None
  * Version:1.0
  */
-public class StudentInformationSystem {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class StudentInformationSystem {
     public static void main(String[] args) {
-        //Display student name and student ID//
-        String studentName = "Siti Nur Syazwani binri Ahmad";
-        String studentID = "S88350";
+        Scanner scanner = new Scanner(System.in);
+
+        // i. Display student name and student ID
+        System.out.print("Enter Student Name: ");
+        String studentName = scanner.nextLine();
         
-        System.out.println("Student Name:" + studentName);
-        System.out.println("Student ID: " + studentID);
+        System.out.print("Enter Student ID: ");
+        String studentId = scanner.nextLine();
+
+        // ii. Store two marks using variables
+        System.out.print("Enter Mark 1: ");
+        double mark1 = scanner.nextDouble();
         
-        //Store two marks uding variables//
-        double mark1 = 42.5;
-        double mark2 = 45.0;
-        
-        //Calculate total mark//
+        System.out.print("Enter Mark 2: ");
+        double mark2 = scanner.nextDouble();
+
+        // iii. Calculate the total mark
         double totalMark = mark1 + mark2;
+
+        // Print Student Profile Summary
+        System.out.println("\n--- Student Details ---");
+        System.out.println("Name: " + studentName);
+        System.out.println("ID: " + studentId);
         
-        //Display the total//
-        System.out.println("Mark1: " + mark1);
-        System.out.println("Mark2: " + mark2);
-        System.out.println("Total Mark;" + totalMark);
-        
-        //Display a message based on the total//
-        String performanceMessage;
+        // iv. Display the total
+        System.out.println("Total Mark: " + totalMark);
+
+        // v. Display a message based on the total
+        String message;
         if (totalMark >= 80) {
-            performanceMessage = "Excellent";
-        } else if (totalMark >= 60){
-            performanceMessage = "Good";
+            message = "Excellent";
+        } else if (totalMark >= 50) {
+            message = "Good";
         } else {
-            performanceMessage = "Need Improvement";
+            message = "Needs Improvement";
         }
-        
-        System.out.println("Performance: " + performanceMessage);
-        }
+        System.out.println("Performance: " + message);
+
+        scanner.close();
     }
-    
+}    
 
