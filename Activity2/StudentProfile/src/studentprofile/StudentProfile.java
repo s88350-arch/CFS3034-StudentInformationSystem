@@ -14,7 +14,7 @@ public class StudentProfile {
 
     /**
      * @param args the command line arguments
-     */
+     */ 
     public static void main(String[] args) {
         System.out.println("Name: Your Name");
         System.out.println("Student ID");
